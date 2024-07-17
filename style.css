@@ -1,8 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
 
-
+:root{
+    --primary-color: rgb(230, 83, 60);
+}
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    /* font-family: ; */
+    font-family: "Inter", sans-serif;
+}
+body{
+    max-width: 1440px;
+    margin: 0 auto;
+    background-color: black;
+}
+section{
+    max-width: 1060px;
+    margin: 0 auto;
+    margin-bottom: 100px;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+li{
+    list-style: none;
+}
+
+/* =============================================== */
+.hamburger-icon{
+    display: none;
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.navbar h1{
+    font-size: 36px;
+    font-weight: 800;
+    color: rgb(230, 83, 60);
+} 
+.navbar nav ul{
+    display: flex;
+    gap: 3rem;
+    font-size: 18px;
+    font-weight: 600;
+}
+.active{
+    padding: 8px 20px 8px 20px;
+    background-color: var(--primary-color);
+    border-radius: 46px;
+}
+.navbar nav{
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 39px;
+    padding: 10px 22px 10px 3px;
 }
