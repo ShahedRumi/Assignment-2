@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Italianno&display=swap');
 
 :root{
     --primary-color: rgb(230, 83, 60);
@@ -26,8 +27,31 @@ a{
 li{
     list-style: none;
 }
-
+h1{
+    color: white;
+}
+p{
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 16px;
+    font-weight: 400;
+}
+img{
+    max-width: 100%;
+    max-height: 100%;
+}
+.btn{
+    border-radius: 42px;
+    background: var(--primary-color);
+    padding: 16px 40px 16px 40px;
+    border: none;
+    font-size: 18px;
+    font-weight: 600;
+    color: white;
+}
 /* =============================================== */
+header{
+    background: linear-gradient(180.00deg, rgb(17, 17, 17),rgba(119, 119, 119, 0) 100%);
+}
 .hamburger-icon{
     display: none;
 }
@@ -35,13 +59,13 @@ li{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-top: 50px;
+    padding-top: 50px;
     margin-bottom: 50px;
 }
 .navbar h1{
     font-size: 36px;
     font-weight: 800;
-    color: rgb(230, 83, 60);
+    color: var(--primary-color);
 } 
 .navbar nav ul{
     display: flex;
@@ -58,4 +82,68 @@ li{
     border: 1px solid rgba(255, 255, 255, 0.1);
     border-radius: 39px;
     padding: 10px 22px 10px 3px;
+}
+/* ============================================================= */
+.banner{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    justify-items: center;
+    align-items: center;
+    gap: 167px;
+}
+.banner-text h1{
+    font-size: 78px;
+    font-weight: 900;
+    line-height: 100px;
+}
+.banner-text>*{
+    margin-bottom: 28px;
+}
+.button{
+    display: flex;
+    gap: 14px
+}
+.banner-text span{
+    font-family: "Italianno", cursive;
+    font-size: 140px;
+    font-weight: 400;
+}
+.btn2{
+    background: transparent;
+    border: 2px solid white;
+}
+.banner-image-container{
+    position: relative;
+}
+.workout, .tutorial{
+    position: absolute;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+    backdrop-filter: blur(20px);
+    background: rgba(255, 255, 255, 0.1);
+    padding: 17px 24px;
+}
+.workout{
+    right: -100px;
+    top: 120px;
+}
+.workout h1{
+    font-size: 40px;
+    font-weight: 900;
+}
+.tutorial h1{
+    font-weight: 900;
+}
+.tutorial{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    left: -100px;
+    top: 430px;
+}
+.circle{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: var(--primary-color);
 }
