@@ -63,7 +63,7 @@ img{
 
 /* =============================================== */
 header{
-    background: linear-gradient(180.00deg, rgb(17, 17, 17),rgba(119, 119, 119, 0) 100%);
+    background: linear-gradient(90deg, rgb(17, 17, 17),rgba(119, 119, 119,0.1));
 }
 .hamburger-icon{
     display: none;
@@ -167,6 +167,7 @@ header{
 .fitness-image img{
     border-radius: 50%;
     margin-bottom: 14px;
+    border: 3px solid rgba(255, 255, 255, 0.2);
 }
 .fitness-image{
     display: grid;
@@ -202,6 +203,9 @@ header{
     display: flex;
     justify-content: center;
     align-items: center;
+}
+.training-text{
+    width: 60%;
 }
 .training1{
     grid-column:1/span 3;
@@ -316,7 +320,7 @@ footer{
     padding: 70px 0;
 }
 .footer-logo-section{
-    width: 50%;
+    width: 40%;
 }
 footer hr{
     border: 2px solid rgba(255, 255, 255, 0.1);
@@ -328,6 +332,7 @@ footer .copyright{
 article{
     background: rgb(34, 34, 34);
     padding: 50px 0;
+    margin-bottom: 100px;
 }
 .bmi{
     display: grid;
@@ -345,6 +350,9 @@ form input, form select{
     border-radius: 8px;
     background: rgba(255, 255, 255, 0.1);
     border: none;
+    font-size: 16px;
+    font-weight: 400;
+    color: rgba(255, 255, 255, 0.6);
 }
 input::placeholder{
     font-size: 16px;
