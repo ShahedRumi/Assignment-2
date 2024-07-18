@@ -325,6 +325,40 @@ footer .copyright{
     text-align: center;
 }
 /* ================================================== */
+article{
+    background: rgb(34, 34, 34);
+    padding: 50px 0;
+}
+.bmi{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin-bottom: 0;
+}
+.bmi-calc form .input-box{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+}
+form input, form select{
+    width: 100%;
+    padding: 15px 20px;
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.1);
+    border: none;
+}
+input::placeholder{
+    font-size: 16px;
+    font-weight: 400;
+    color: rgba(255, 255, 255, 0.6);
+}
+option{
+    font-size: 16px;
+    font-weight: 400;
+    color: rgba(255, 255, 255, 0.6);
+}
+.span-column{
+    grid-column:1/ span 2;
+}
 .bmi-calculator-section h1{
     font-size: 28px;
     font-weight: 900;
