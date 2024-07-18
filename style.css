@@ -75,7 +75,7 @@ header{
     padding-top: 50px;
     margin-bottom: 50px;
 }
-.navbar h1{
+.navbar h1, footer h1{
     font-size: 36px;
     font-weight: 800;
     color: var(--primary-color);
@@ -302,3 +302,39 @@ header{
     background-size: cover;
     background-position: center;
 }
+/* ========================================= */
+footer section{
+    margin-bottom: 0;
+}
+footer{
+    background: rgba(255, 255, 255, 0.1);
+    padding: 10px 0px;
+}
+.footer-text-section{
+    display: flex;
+    justify-content: space-between;
+    padding: 70px 0;
+}
+.footer-logo-section{
+    width: 50%;
+}
+footer hr{
+    border: 2px solid rgba(255, 255, 255, 0.1);
+}
+footer .copyright{
+    text-align: center;
+}
+/* ================================================== */
+.bmi-calculator-section h1{
+    font-size: 28px;
+    font-weight: 900;
+}
+.bmi-chart table{
+    border-collapse: collapse;
+}
+th, td{
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    padding: 13px 18px;
+}
+
+    
